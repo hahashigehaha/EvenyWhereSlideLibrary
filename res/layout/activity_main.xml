@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.flyme.evenywhereslidelibrary.MainActivitye" >
+
+    
+    <com.flyme.evenywhereslidelibrary.SlideLayout 
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:gravity="left"
+        >
+        
+		<LinearLayout 
+		    android:layout_width="200dip"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    >      
+        <TextView
+            android:id="@+id/one_one"
+			android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:background="@android:color/holo_red_light"
+            />
+        <TextView 
+            android:id="@+id/one_two"
+            android:background="@android:color/holo_blue_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="收藏"
+			android:gravity="center"
+            />
+        </LinearLayout> 
+        
+		<LinearLayout 
+		    android:background="@android:color/white"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    >      
+        <TextView
+            android:id="@+id/top_left"
+            android:gravity="center"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="topLeft"
+            />
+        <TextView 
+            android:id="@+id/top_right"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="topRight"
+			android:gravity="center"
+            />
+        </LinearLayout> 
+    </com.flyme.evenywhereslidelibrary.SlideLayout>
+    
+    
+    <com.flyme.evenywhereslidelibrary.SlideLayout 
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:gravity="right"
+        android:layout_marginTop="40dip"
+        >
+        
+        <TextView
+            android:id="@+id/delect"
+			android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="180dip"
+            android:layout_height="match_parent"
+            android:text="bottom view"
+            android:background="@android:color/holo_red_light"
+            />
+        <TextView 
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Top two View  this is a test"
+            />
+    </com.flyme.evenywhereslidelibrary.SlideLayout>
+    
+    
+    <com.flyme.evenywhereslidelibrary.SlideLayout 
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:gravity="top"
+        android:layout_marginTop="40dip"
+        >
+        
+        <TextView
+            android:id="@+id/top_bottom"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="bottom view"
+            android:background="@android:color/holo_red_light"
+            />
+        <TextView
+            android:id="@+id/top_top"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Top Top View  this is a test"
+            />
+    </com.flyme.evenywhereslidelibrary.SlideLayout>
+    
+    
+    <com.flyme.evenywhereslidelibrary.SlideLayout 
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:gravity="bottom"
+        android:layout_marginTop="40dip"
+        >
+        
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="bottom view"
+            android:background="@android:color/holo_red_light"
+            />
+        <TextView 
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Top Bottom View  this is a test"
+            />
+    </com.flyme.evenywhereslidelibrary.SlideLayout>
+
+</LinearLayout>

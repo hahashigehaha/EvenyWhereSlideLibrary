@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:background="#fff9f9f9" >
+        <ImageButton
+            android:id="@+id/qrcode_back"
+            android:layout_width="80sp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingRight="25sp"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5sp"
+            android:textColor="#ff30CDCF"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/qrcode_pbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="8dip"
+        android:indeterminateOnly="false"
+        android:max="100"
+       >
+    </ProgressBar>
+    <WebView
+        android:id="@+id/qrcode_webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         />
+</LinearLayout>
